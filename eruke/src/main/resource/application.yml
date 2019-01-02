@@ -1,0 +1,14 @@
+server:
+  port: 8090
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+         defaultZone: http://user:123456@localhost:8090/eureka
+security:
+  basic:
+    enabled: true #开启需要密码  不需要设置为false
+  user:
+    name: user
+    password: 123456
